@@ -40,3 +40,8 @@ jobs:
         run: |
           gcc -Werror up1053649.c -o sampleProgram
 
+      - name: Run a multi-line script
+        run: |
+          sudo apt-get install cppcheck
+
+
