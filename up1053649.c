@@ -13,6 +13,7 @@ int prime_numbers[]={1999, 3989, 7993, 15907, 29989,
 
 
 
+
 int count_size = 0;
 int hashsize=997;
 double load_factor=0;
