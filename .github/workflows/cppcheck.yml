@@ -45,7 +45,8 @@ jobs:
           cppcheck  --enable=all --enable=style  --suppress=missingIncludeSystem --suppress=variableScope --suppress=unmatchedSuppression:nofile  up1053649.c 2> check.txt
 
 
-       - name: exit with error
+       - name: throw erorr
+        run: |
           exit 2
 
 
