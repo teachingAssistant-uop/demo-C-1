@@ -45,4 +45,4 @@ jobs:
           cppcheck  --enable=all --enable=style  --suppress=missingIncludeSystem --suppress=variableScope --suppress=unmatchedSuppression:nofile  up1053649.c 2> check.txt
       - name: Run on error
         run: |
-          exit 2
+          if [ -s check.txt ]; then exit 2; fi
