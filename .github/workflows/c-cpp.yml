@@ -14,9 +14,6 @@ on:
 
 # The whole action can contain sub-items called jobs
 # Jobs are run separately and will spin up a new build machine for each sub-item
-strategy:
-  matrix:
-    compiler: [gcc, clang]
 
 jobs:
   # Under jobs you can put whatever name you want
@@ -40,8 +37,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        env:
-          CC: ${{ matrix.compiler }}
         run: |
+          sudo apt install gcc-10 g++-10,
           gcc up1053649.c -o sampleProgram
 
