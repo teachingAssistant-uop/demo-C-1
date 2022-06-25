@@ -12,7 +12,7 @@ void printing(char character);
 void printing_int(int character);
 int main(){
     int selection = 0;
-    int ;
+    int size;
     for (;selection != 5;){
         selection = shapechoice();
         if (selection < 5) {
