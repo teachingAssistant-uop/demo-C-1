@@ -1,4 +1,4 @@
-name: compile-check
+name: compile-check-strict
 
 
 # The "on" option will specify when to run this action and on which branch
